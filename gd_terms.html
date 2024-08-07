@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>GD Terms</h1>
+<ul>
+    {% for term in terms %}
+    <li class="term"><strong>{{ term.term }}</strong>: {{ term.definition }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
